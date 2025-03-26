@@ -191,7 +191,7 @@ li {
     margin-top: 5rem;
     padding-top: 2rem;
     padding-bottom: 3rem;
-    background: rgba(255, 255, 255, 0.1);
+    /* background: rgba(255, 255, 255, 0.1); */
     border-radius: 10px;
     transform: scale(0);
     animation: zoom-in-1s 1s ease forwards;
