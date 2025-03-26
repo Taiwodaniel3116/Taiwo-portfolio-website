@@ -1,6 +1,16 @@
-function toggleSidebar() {
-  document.body.classList.toggle("open");
-  document.querySelector(".hamburger").classList.toggle("active");
-  document.querySelector(".sidebar").classList.toggle("active");
-  document.querySelector(".backdrop").classList.toggle("active");
-}
+
+const hamburgerMenu = document.querySelector('.js-ham-menu');
+const navContainer = document.querySelector('.js-nav-container');
+const backdrop = document.querySelector('.backdrop');
+
+hamburgerMenu.addEventListener('click', () => {
+  navContainer.classList.toggle('active');
+  hamburgerMenu.classList.toggle('active');
+  backdrop.classList.toggle('active');
+});
+
+backdrop.addEventListener('click', () => {
+  navContainer.classList.toggle('active');
+  hamburgerMenu.classList.toggle('active');
+  backdrop.classList.toggle('active');
+})

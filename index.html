@@ -11,23 +11,23 @@
     rel="stylesheet"/>
 </head>
 <body>
-  <header class="header">
-    <p class="name">TAIWO.O</p>
-    <div class="hamburger" onclick= toggleSidebar()>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
 
-    <div class="sidebar">
-      <nav class="nav-links">
-      <a href="/" class="links home-link">Home</a>
-      <a href="/about" class="links">About</a>
-      <a href="/prjoects" class="links">Projects</a>
-      <a href="/contact" class="links">Contact</a>
-    </nav>
-    </div>
-  </header>
+  <header class="header">
+    <p class="my-name">Taiwo . O</p>
+   <nav>
+     <div class="hamburger js-ham-menu">
+       <span></span><span></span><span></span>
+     </div>
+     <div class="nav-container js-nav-container">
+     <ul>
+       <li><a href="" id="home-link">Home</a></li>
+       <li><a href="">About</a></li>
+       <li><a href="">projects</a></li>
+       <li><a href="">Contact</a></li>
+     </ul>
+   </div> 
+   </nav>
+ </header>
 
   <main> 
  <div class="home">
@@ -42,13 +42,7 @@
             <span class="span3"> Developer</span>
         </h1>
         <p class="intro">I'm a passionate developer who is committed to designing and developing websites that are user-friendly, interactive, fast ⚡ and responsive📱💻.</p>
-    
-         <!-- <div class="socials">
-          <a href="#"><i class="ri-github-fill"></i></a>
-          <a href="#"><i class="ri-linkedin-fill"></i></a>
-          <a href="#"><i class="ri-twitter-x-fill"></i></a>
-          <a href="#"><i class="ri-youtube-fill"></i></a> 
-        </div>  -->
+
         <button class="reachout-btn">Download Resume</button>
       </div>
 
@@ -78,8 +72,6 @@
 
           <!-- PROJECTS -->
           <div class="projects">
-            <!-- {/* https://github.com/Taiwodaniel3116/Todo-app */}
-            {/* https://taiwodaniel3116.github.io/Todo-app/ */} -->
             <h2>Projects</h2>
     
             <div class="projects-container">
@@ -176,35 +168,47 @@
           <!-- CONTACT -->
           <div class="contact">
             <h2>Contact Me</h2>
+            <div class="form-container">
+              <form action="">
+                <input id="name-input" type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+            
+                <textarea name="message" placeholder="Your Message" required></textarea>
+            
+              <button type="submit" class="submit-btn">Submit⇛</button>
+              </form>
+            </div>
+
               <div class="contact-info">
+                <h2>My Handles</h2>
               <a href="#" class="back-to-top"><i class="ri-arrow-up-circle-fill"></i></a>
         
                 <div class="info-wrapper">
-                  <a href=""><i class="ri-mail-fill"></i></a>
+                  <a href=""><i class="mail-fill"></i></a>
                    <p class="info-header">Email</p>
                    <p class="username">Taiwodaniel3116@gmail.com</p>
                 </div>
         
                 <div class="info-wrapper">
-                <a href="#"><i class="ri-github-fill"></i></a>
+                <a href="#"><i class="github-fill"></i></a>
                    <p class="info-header">Github</p>
                    <p class="username">Taiwodaniel3116</p>
                 </div>
         
                 <div class="info-wrapper">
-                    <a href="#"><i class="ri-twitter-x-fill"></i></a>
+                    <a href="#"><i class="twitter-x-fill"></i></a>
                    <p class="info-header">X</p>
                    <p class="username">@Onaolapo116</p>
                 </div>
         
                 <div class="info-wrapper linkedin-wrapper">
-                   <a href="#"><i class="ri-linkedin-fill"></i></a>
+                   <a href="#"><i class="linkedin-fill"></i></a>
                    <p class="info-header">LinkedIn</p>
                    <p class="username">Taiwodaniel3116</p>
                 </div>
         
                 <div class="info-wrapper instagram-wrapper">
-                   <a href=""><i class="ri-instagram-fill"></i></a>
+                   <a href=""><i class="instagram-fill"></i></a>
                    <p class="info-header">Instagram</p>
                    <p class="username">Taiwo_odusanya_73</p>
                 </div>
@@ -214,6 +218,7 @@
               <p class="contact-name">TAIWO.O</p>
         
             </div>
+            <div class="backdrop"></div>
   </main>
   <script src="/index.js"></script>
 </body>
