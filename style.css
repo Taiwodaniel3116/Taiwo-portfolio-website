@@ -277,19 +277,27 @@ li {
     color: #0000009f;
     filter: drop-shadow(0 0 0.6em #fff);
   }
+  .img-text-wrapper {
+    display: grid;
+  }
+  .img-wrapper {
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
   .about img {
-    width: 200px;
-    height: 200px;
+    width: 270px;
+    height: 270px;
     background: #fff;
-    border: 2px solid #000;
+    /* border: 2px solid #000; */
+    box-shadow: 0 0 10px #000;
     animation: slideInLeft linear;
     animation-timeline: view();
     animation-range: entry 0% cover 30%;
   }
   .about-text {
     animation: slideInRight linear;
-    /* animation-timeline: view();
-    animation-range: entry 0% cover 30%; */
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
   }
   /* Tech Stack */
   .techstack {
@@ -414,7 +422,6 @@ li {
     /* border: none; */
     box-shadow: 0 0 10px rgb(48, 29, 48);
   }
- 
   .about-project {
     color: rgba(19, 18, 18, 0.925);
   }
