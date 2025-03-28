@@ -83,7 +83,7 @@ ul li a {
   text-decoration: none;
   color: #ffffff85;
   line-height: 2.6rem;
-  font-weight: bold;
+  font-weight: 500;
   position: relative;
   opacity: 0;
   transform: translateY(30px);
