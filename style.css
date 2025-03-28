@@ -58,7 +58,7 @@ button {
   border-bottom: 1px dashed rgb(255, 255, 255, 0.2);
 }
 .my-name{
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   color: rgb(255, 255, 255, 0.3);
    opacity: 0;
