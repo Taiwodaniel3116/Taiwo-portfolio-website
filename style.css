@@ -10,7 +10,6 @@ body {
   padding-inline-end: 1rem;
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  box-sizing: border-box;
   background: linear-gradient(-135deg, #153677, #4e085f);
 }
 /* Animations */
@@ -290,15 +289,28 @@ li {
     background: #fff;
     /* border: 2px solid #000; */
     box-shadow: 0 0 10px #000;
-    animation: slideInLeft linear;
+    /* animation: slideInLeft linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 30%;
+    animation-range: entry 0% cover 30%; */
   }
-  .about-text {
+  /* .about-text {
     animation: slideInRight linear;
     animation-timeline: view();
     animation-range: entry 0% cover 30%;
-  }
+  } */
+   /* ANIMATE ON SCROLL */
+    .hidden {
+      opacity: 0;
+      filter: blur(2px);
+      transform: translateX(-100px);
+      transition: all 1s;
+    }
+    .show {
+      opacity: 1;
+      filter: blur(0);
+      transform: translateX(0);
+    }
+   /*  */
   /* Tech Stack */
   .techstack {
     text-align: center;
@@ -362,11 +374,11 @@ li {
     padding-top: 1rem;
     padding-bottom: 2rem;
   }
-  .text-to-btns {
+  /* .text-to-btns {
     animation: slideInLeft linear;
     animation-timeline: view();
     animation-range: entry 0% cover 30%;
-  }
+  } */
   .projects h2 {
     color: #0000009f;
     filter: drop-shadow(0 0 0.6em #fff);
@@ -398,27 +410,27 @@ li {
     grid-column-end: 1;
     grid-row-start: 1;
     grid-row-end: 1;
-    animation: slideInRight linear;
+    /* animation: slideInRight linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 30%;
+    animation-range: entry 0% cover 30%; */
   }
   .spering-img {
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
     grid-row-end: 1;
-    animation: slideInRight linear;
+    /* animation: slideInRight linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 30%;
+    animation-range: entry 0% cover 30%; */
   }
   .todo-img {
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
     grid-row-end: 1;
-    animation: slideInRight linear;
+    /* animation: slideInRight linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 30%;
+    animation-range: entry 0% cover 30%; */
     /* border: none; */
     box-shadow: 0 0 10px rgb(48, 29, 48);
   }
