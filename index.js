@@ -28,3 +28,12 @@ const observer = new IntersectionObserver((entries) => {
 })
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+
+// 3D SPHERE ANIMATION //
+const sphere = document.getElementById('sphere');
+const rows = []
+for (let i = 0; i < 180; i += 10) {
+   rows.push(`<div class ="line" style= "transform: rotateY(${i}deg);"></div>`);
+}
+
+sphere.innerHTML = rows.join("");

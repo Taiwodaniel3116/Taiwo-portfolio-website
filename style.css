@@ -56,7 +56,7 @@ button {
   top: 0;
   left: 0;
   z-index: 1;
-  border-bottom: 1px dashed rgb(255, 255, 255, 0.2);
+  /* border-bottom: 1px dashed rgb(255, 255, 255, 0.2); */
 }
 .my-name{
   font-size: 1.2rem;
@@ -166,6 +166,7 @@ li {
       transform: scale(1);
     }
   }
+
   .home h1 {
     font-size: 1.7rem;
     color: #fff;
@@ -232,14 +233,82 @@ li {
       opacity: 1;
     }
   }
-  .web-icon {
+  /* .web-icon {
     width: 25px;
     height: 25px;
     position: absolute;
     top: -15%;
     filter: drop-shadow(0 0 0.5em aqua);
     animation: rotate 30s infinite;
+  } */
+     /* Shere Animation */
+  .scene {
+    width: 200px; /* was 600px */
+    height: 200px; /* was 600px */
+    transform: rotateX(45deg) rotateY(45deg);
+    transform-style: preserve-3d;
+    position: absolute;
+    left: 15%;
+    /* right: 25%; */
   }
+
+  .sphere {
+    position: relative;
+    width: 100%; /* was 70% */
+    height: 100%; /* was 70% */
+    margin: 0 auto;
+    transform-style: preserve-3d;
+    animation: rotate 50s infinite linear;
+  }
+
+  .line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px;
+    border-style: groove;
+    border-color: rgb(231, 35, 225);
+    border-color: #153677;
+    /* box-shadow: 1px 0px 5px 1px rgb(15, 105, 75), 1px 0px 5px 1px rgb(15, 105, 75); */
+    /* box-shadow: 1px 0px 20px -2px rgba(0,0,0), 1px 0px 50px -2px aquamarine; */
+  }
+
+  /* @keyframes spin {
+    to {
+      transform: rotateX(360deg) rotateY(360deg);
+    }
+  } */
+
+  .spin-wrap {
+    width: 100%;
+    height: 100%;
+    transform: rotateX(45deg) rotateY(45deg);
+    transform-style: preserve-3d;
+  }
+  /* .blur-circle-1,
+  .blur-circle-2,
+  .blur-circle-3,
+  .blur-circle-4 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    filter: blur(80px);
+  }
+  .blur-circle-2 {
+    left: 90%;
+  }
+  .blur-circle-3 {
+    left: 50%;
+    top: 60%;
+  }
+  .blur-circle-4 {
+    top: 60%;
+  } */
   .star-icon-1,
   .star-icon-2 {
     position: absolute;
@@ -634,6 +703,13 @@ li {
   .home h1 {
     font-size: 2rem;
   }
+     /* Shere Animation */
+     .scene {
+      width: 230px;
+      height: 230px; 
+      left: 15%;
+      /* right: 25%; */
+    }
   .star-icon-2 {
     right: 10%;
     bottom: 12%;
@@ -662,6 +738,13 @@ li {
   }
   .home h1 {
     font-size: 2rem;
+  }
+   /* Shere Animation */
+   .scene {
+    width: 250px;
+    height: 250px; 
+    left: 15%;
+    /* right: 25%; */
   }
   .intro {
     padding-inline-start: 0.3rem;
@@ -722,6 +805,14 @@ li {
   .home h1 {
     font-size: 2.5rem;
     margin-top: 3rem;
+  }
+  .scene {
+    width: 300px; /* was 600px */
+    height: 300px; /* was 600px */
+    transform: rotateX(45deg) rotateY(45deg);
+    transform-style: preserve-3d;
+    position: absolute;
+    left: 30%;
   }
   .intro {
     width: 55ch;
@@ -962,6 +1053,13 @@ ul li a {
     top: 0;
     right: 20%;
   }
+       /* Shere Animation */
+       .scene {
+        width: 600px; /* was 600px */
+        height: 600px; /* was 600px */
+        /* left: 25%; */
+        right: 25%;
+      }
   .star-icon-1 {
     left: 20%;
   }
