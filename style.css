@@ -310,7 +310,8 @@ li {
     top: 60%;
   } */
   .star-icon-1,
-  .star-icon-2 {
+  .star-icon-2,
+  .star-icon-3 {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -335,6 +336,12 @@ li {
     bottom: 12%;
     transform: translateX(30px);
     animation-delay: 5.5s;
+  }
+  .star-icon-3 {
+    width: 12px;
+    height: 12px;
+    top: 0;
+    filter: drop-shadow(0 1em 0.5em yellow);
   }
 
   /* About */
@@ -361,13 +368,11 @@ li {
   .about img {
     width: 270px;
     height: 270px;
-    background: #fff;
-    /* border: 2px solid #000; */
-    box-shadow: 0 0 10px #000;
-    /* animation: slideInLeft linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 30%; */
+    /* background: #fff; */
+    border: 5px solid #ffffff95;
+    box-shadow: 1px 0px 10px -2px rgba(0,0,0), 1px 0px 20px -2px #fff;
     object-fit: cover;
+    border-radius: 15px;
   }
   .about-text {
     color: whitesmoke;
