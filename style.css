@@ -288,19 +288,18 @@ li {
     transform: rotateX(45deg) rotateY(45deg);
     transform-style: preserve-3d;
   }
-  /* .blur-circle-1,
+  .blur-circle-1,
   .blur-circle-2,
-  .blur-circle-3,
-  .blur-circle-4 {
-    width: 100px;
-    height: 100px;
+  .blur-circle-3 {
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color:#153677;
     position: absolute;
     filter: blur(80px);
   }
   .blur-circle-2 {
-    left: 90%;
+    left: 70%;
   }
   .blur-circle-3 {
     left: 50%;
@@ -308,9 +307,9 @@ li {
   }
   .blur-circle-4 {
     top: 60%;
-  } */
+  }
   .star-icon-1,
-  .star-icon-2,
+
   .star-icon-3 {
     position: absolute;
     width: 30px;
@@ -322,8 +321,7 @@ li {
     animation-delay: 5s;
     filter: drop-shadow(0 1em 0.8em yellow);
   }
-  .star-icon-1,
-  .star-icon-2 {
+  .star-icon-1 {
     width: 25px;
     height: 25px;
   }
@@ -383,13 +381,36 @@ li {
       opacity: 0;
       filter: blur(2px);
       transform: translateX(-100px);
-      transition: all 1s;
+      transition: all 2s;
     }
     .show {
       opacity: 1;
       filter: blur(0);
       transform: translateX(0);
     }
+    .hidden-2 {
+      opacity: 0;
+      filter: blur(2px);
+      transform: scale(20%);
+      transition: all 1.5s;
+    }
+    .show-2 {
+      opacity: 1;
+      filter: blur(0);
+      transform: scale(100%);
+    }
+    .hidden-3 {
+      opacity: 0;
+      filter: brightness(5%);
+      transform: scale(70%);
+      transition: all 4s;
+    }
+    .show-3 {
+      opacity: 1;
+      filter: brightness(100%);
+      transform: scale(100%);
+    }
+  
    /*  */
   /* Tech Stack */
   .techstack {
@@ -580,6 +601,9 @@ li {
   .contact h2 {
     color: #ffffffe1;
     filter: drop-shadow(0 0 0.6em #fff);
+  }
+  .contact-subheading {
+    color: #ffffff85;
     padding-bottom: 3rem;
   }
   /* form */
@@ -972,6 +996,15 @@ li {
   .home .youtube-logo {
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .blur-circle-1,
+  .blur-circle-2,
+  .blur-circle-3 {
+    width: 100px;
+    height: 100px;
+  }
+  .blur-circle-2 {
+    left: 90%;
   }
   /* About */
   .about {
