@@ -200,6 +200,7 @@ li {
   .intro {
     color: #ffffff95;
     margin-top: 0;
+    padding-top: 10px;
     border-radius: 10px;
     opacity: 0;
     transform: translateY(30px);
@@ -207,15 +208,16 @@ li {
     animation-delay: 3.5s;
   }
   .reachout-btn {
-    width: 170px;
-    height: 40px;
-    font-size: 0.9rem;
+    width: 200px;
+    height: 43px;
+    font-size: 1rem;
     font-weight: 500;
     border-radius: 20px;
     border: none;
+    margin-top: 10px;
     box-shadow: 0 0 10px #fff;
-    color: #861fc293;
-    color: black; /*  */
+    background: #000;
+    color: #fff; /*  */
     opacity: 0;
     animation: rotate-3s-ease forward;
     transform: translateY(30px);
@@ -224,7 +226,8 @@ li {
   }
   .reachout-btn:hover {
     background-color: #ffffff85;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     border: 1px solid rgb(255, 255, 255, 0.1);
   }
   @keyframes zoom-in-2s {
@@ -453,6 +456,9 @@ li {
   .git-logo {
     filter: drop-shadow(0 0 1em orange);
   }
+  .tailwind-logo {
+    filter: drop-shadow(0 0 1em aqua);
+  }
   .techstack .github-logo {
     filter: drop-shadow(0 0 1em black);
   }
@@ -488,7 +494,8 @@ li {
   }
   .featherflow,
   .spering,
-  .todo-app {
+  .todo-app,
+  .e-commerce {
     display: grid;
   }
   .wrapper {
@@ -501,12 +508,22 @@ li {
   }
   .featherflow-img,
   .spering-img,
-  .todo-img {
+  .todo-img,
+  .e-commerce-img {
     width: 250px;
     height: 200px;
     justify-self: center;
     border: 1px solid #000;
     border-radius: 10px;
+  }
+  .e-commerce-img {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    /* animation: slideInRight linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%; */
   }
   .featherflow-img {
     grid-column-start: 1;
@@ -731,12 +748,18 @@ li {
   }
   .home h1 {
     font-size: 2rem;
+    margin-top: 6rem;
+  }
+  .home h1 .h-wrld {
+    background: linear-gradient(to right, #fff, #333);
+    -webkit-background-clip: text;
+    color: transparent;
   }
      /* Shere Animation */
      .scene {
       width: 230px;
       height: 230px; 
-      left: 15%;
+      left: 16%;
       /* right: 25%; */
     }
   .star-icon-2 {
@@ -772,7 +795,7 @@ li {
    .scene {
     width: 250px;
     height: 250px; 
-    left: 15%;
+    left: 18%;
     /* right: 25%; */
   }
   .intro {
@@ -904,6 +927,7 @@ li {
   .techstack .css-logo,
   .techstack .js-logo,
   .techstack .react-logo,
+  .techstack .tailwind-logo,
   .techstack .git-logo,
   .techstack .github-logo {
     width: 50px;
@@ -921,7 +945,8 @@ li {
   }
   .featherflow,
   .spering,
-  .todo-app {
+  .todo-app,
+  .e-commerce {
     display: flex;
     text-align: start;
     padding-inline-start: 1rem;
@@ -976,6 +1001,13 @@ li {
     font-size: 3.3rem;
     padding-top: 2rem;
   }
+   /* Shere Animation */
+   .scene {
+    width: 370px;
+    height: 370px; 
+    left: 31%;
+    /* right: 25%; */
+  }
   .star-icon-1,
   .star-icon-2 {
     width: 40px;
@@ -1025,7 +1057,8 @@ li {
   /* Projects */
   .featherflow,
   .spering,
-  .todo-app {
+  .todo-app,
+  .e-commerce {
     padding-inline-start: 2rem;
     padding-inline-end: 2rem;
   }
@@ -1132,7 +1165,8 @@ ul li a {
   }
   .featherflow,
   .spering,
-  .todo-app {
+  .todo-app,
+  .e-commerce {
     padding-inline-start: 4rem;
     padding-inline-end: 4rem;
   }
@@ -1177,8 +1211,8 @@ ul li a {
   font-size: 1.4rem;
  }
  .reachout-btn {
-  width: 220px;
-  height: 50px;
+  width: 250px;
+  height: 53px;
   font-size: 1.2rem;
  }
   /* About */
@@ -1208,7 +1242,8 @@ ul li a {
   }
   .featherflow,
   .spering,
-  .todo-app {
+  .todo-app,
+  .e-commerce {
     padding-inline-start: 6rem;
     padding-inline-end: 6rem;
   }
@@ -1221,7 +1256,8 @@ ul li a {
   .projects .html-logo,
   .projects .css-logo,
   .projects .js-logo,
-  .projects .reactjs-logo {
+  .projects .reactjs-logo,
+  .projects .tailwind-logo {
     width: 55px;
     height: 55px;
   }
@@ -1274,7 +1310,8 @@ ul li a {
 /*  Projects */
 .featherflow,
 .spering,
-.todo-app {
+.todo-app,
+.e-commerce {
   padding-inline-start: 8rem;
   padding-inline-end: 8rem;
 }
