@@ -788,7 +788,7 @@ li {
   }
   .home h1 .h-wrld {
     background: linear-gradient(to right, #fff, #333);
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text; */
     color: transparent;
   }
      /* Shere Animation */
