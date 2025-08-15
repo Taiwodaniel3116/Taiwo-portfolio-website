@@ -12,6 +12,11 @@ body {
   font-style: normal;
   background: linear-gradient(-135deg, #153677, #4e085f);
   background: black;
+  /* background-color: #000010;
+  box-shadow: inset 0 0 50px #00f0ff; */
+background: linear-gradient(135deg, #000000, #002147);
+background-size: cover;
+box-shadow: 0 0 40px #000607, inset 0 0 60px #002147;
 }
 /* Animations */
 @keyframes slideInLeft {
@@ -48,8 +53,8 @@ button {
   color: #000;
 }
 .header {
-  background: linear-gradient(135deg, #4e085f, #153677);
-  background: black;
+  /* background: linear-gradient(135deg, #4e085f, #153677); */
+  /* background: black; */
   margin-bottom: 2.5rem;
   position: fixed;
   width: 100%;
@@ -57,6 +62,7 @@ button {
   left: 0;
   z-index: 1;
   /* border-bottom: 1px dashed rgb(255, 255, 255, 0.2); */
+  box-shadow: 0 0 40px #0c4449, inset 0 0 60px #002147;
 }
 .my-name{
   font-size: 1.2rem;
@@ -75,12 +81,15 @@ button {
   width: 50%;
   height: 100vh;
   max-width: 100%;
-  background: linear-gradient(135deg, #153677, #4e085f);
-  background: black;
+  /* background: linear-gradient(135deg, #153677, #4e085f);
+  background: black; */
   position: absolute;
-  top: 58px;
+  top: 68px;
   left: -100%;
   transition: 0.3s ease;
+  background: linear-gradient(135deg, #000000, #002147);
+background-size: cover;
+box-shadow: 0 0 40px #000607, inset 0 0 60px #002147;
 }
 ul li a {
   text-decoration: none;
@@ -160,6 +169,9 @@ li {
     transform: scale(0);
     animation: zoom-in-1s 1s ease forwards;
     /* background: linear-gradient(135deg, #153677, #4e085f);  */
+    /* background: linear-gradient(to right, #000000, #003366, #000000); */
+    /* background: linear-gradient(to bottom, #000000, #000033); */
+    /* background: linear-gradient(135deg, #0A0A0A, #002147); */
   } 
   @keyframes zoom-in-1s {
     100% {
@@ -216,8 +228,13 @@ li {
     border: none;
     margin-top: 10px;
     box-shadow: 0 0 10px #fff;
-    background: #000;
-    color: #fff; /*  */
+    /* background: #000; */
+    background: rgba(0, 0, 20, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+    color: #fff; 
     opacity: 0;
     animation: rotate-3s-ease forward;
     transform: translateY(30px);
@@ -353,6 +370,11 @@ li {
     border-radius: 10px;
     padding-top: 1rem;
     padding-bottom: 2rem;
+    background: rgba(0, 0, 20, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
   }
   .about h2 {
     color: #0000009f;
@@ -419,10 +441,15 @@ li {
   .techstack {
     text-align: center;
     margin-top: 5rem;
-    background: rgba(255, 255, 255, 0.1);
+    /* background: rgba(255, 255, 255, 0.1); */
     border-radius: 10px;
     padding-top: 1rem;
     padding-bottom: 2rem;
+    background: rgba(0, 0, 20, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
   }
   .techstack h2 {
     color: #0000009f;
@@ -481,6 +508,11 @@ li {
     border-radius: 10px;
     padding-top: 1rem;
     padding-bottom: 2rem;
+    background: rgba(0, 0, 20, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
   }
   /* .text-to-btns {
     animation: slideInLeft linear;
@@ -609,11 +641,15 @@ li {
   .contact {
     text-align: center;
     margin-top: 4rem;
-    background: linear-gradient(135deg, #153677, #4e085f);
     border-radius: 10px;
     padding-top: 1rem;
     position: relative;
-    background: #000;
+    /* background: #000; */
+    background: rgba(0, 0, 20, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
   }
   .contact h2 {
     color: #ffffffe1;
