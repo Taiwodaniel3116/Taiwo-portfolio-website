@@ -663,6 +663,7 @@ li {
   .contact-subheading {
     color: #ffffff85;
     padding-bottom: 3rem;
+    padding-inline: 2px;
   }
   /* form */
   .form-container form{
@@ -1013,6 +1014,9 @@ li {
   .contact h2 {
     font-size: var(--H2-FONT-SIZE);
   }
+  .contact-subheading {
+    padding-inline: 100px;
+  }
   .form-container form{
     width: 60%;
   }
@@ -1212,6 +1216,10 @@ ul li a {
     padding-inline-end: 4rem;
   }
   /* Contact */
+  .contact-subheading {
+    font-size: 20px;
+    padding-inline: 240px;
+  }
   .form-container form{
     width: 50%;
   }
@@ -1313,6 +1321,10 @@ ul li a {
     height: 370px;
   }
   /* Contact */
+  .contact-subheading {
+    font-size: 23px;
+    padding-inline: 350px;
+  }
   form button {
     width: 150px;
     height: 45px;
